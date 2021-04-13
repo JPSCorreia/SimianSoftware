@@ -1,4 +1,6 @@
 
+
+/* GENERAL RULES */
 html {
 
   font-family: "Roboto", sans-serif;
@@ -11,21 +13,44 @@ body {
 
 }
 
-header {
-  position: fixed;
-  width: 100%;
-  border-bottom: solid 4px #19a2d8;
-  background-color: white;
-  z-index: 2;
-  font-size: 32px;
-  font-family: 'Rubik', sans-serif;
-}
-
-
 .flex-container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #19a2d8;
+  font-weight:bold;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding: 0.25rem;
+}
+
+.main-content img {
+  padding: 0.75rem;
+  border-radius: 50px;
+  border-left: solid 1px #19a2d8;
+  border-right: solid 1px #19a2d8;
+  margin-top: 1rem;
+}
+
+/* HEADER and NAV BAR */
+
+header {
+  position: fixed;
+  width: 100%;
+  border-bottom: solid 0px #19a2d8;
+  background-color: white;
+  z-index: 2;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .flex-container .logo {
@@ -33,16 +58,86 @@ header {
   flex: 1;
 }
 
-
-
-
-
 li {
   display: inline;
   margin-right: 50px;
-  margin-left: 20px;
+  
 }
 
 nav a:hover {
   color: #19a2d8;
 }
+
+
+/* Main Content */
+
+.main-content {
+  position: relative;
+  top: 7.53rem; /* offset for header */
+  background-color: white;
+
+  
+}
+
+.main-content .flex-container {
+  flex-direction: column;
+ 
+}
+
+
+
+
+
+
+/* Mission Statement */
+
+.mission-statement {
+  padding-top: 50px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.mission-statement .image {
+
+}
+
+
+/* Services */
+
+.services {
+  padding-top: 50px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+
+/* Our Team */
+.our-team {
+  padding-top: 50px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+
+/* Contacts */
+
+.contacts {
+  padding-top: 50px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.contacts img {
+  border: 0;
+}
+
+#email_icon {
+  height: 50px;
+}
+
+/* Footer */
+
