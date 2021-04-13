@@ -1,0 +1,48 @@
+
+html {
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+
+  background-color: rgb(133, 131, 131);
+
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  border-bottom: solid 4px #19a2d8;
+  background-color: white;
+  z-index: 2;
+  font-size: 32px;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-container .logo {
+  justify-self: flex-start;
+  flex: 1;
+}
+
+
+
+
+
+li {
+  display: inline;
+  margin-right: 50px;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #19a2d8;
+}
