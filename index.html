@@ -13,6 +13,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   </head>
 
+
+  <!-- dropdown button script-->
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+
   <body>
 
    <!-- Header (Logo + Nav Bar)-->
@@ -21,11 +46,22 @@
           <span class="logo"><img src="resources/SS_small.png"></span>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#mission-statement">Mission Statement</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#our-team">Our Team</a></li>
-            <li><a href="#contacts">Contact Us</a></li>
+            <li id="home_list_item"><a href="#">Home</a></li>
+            <li id="mission_list_item"><a href="#mission-statement">Mission Statement</a></li>
+            <li id="services_list_item"><a href="#services">Services</a></li>
+            <li id="our-team_list_item"><a href="#our-team">Our Team</a></li>
+            <li id="contacts_list_item"><a href="#contacts">Contact Us</a></li>
+            <li id="dropdown_list_item">
+              <div class="dropdown">
+                <img onclick="myFunction()" class="dropbtn" src="resources/dropdown_small.png">
+                <div id ="myDropdown" class="dropdown-content">
+                  <a href="#mission-statement">Mission Statement</a>
+                  <a href="#services">Services</a>
+                  <a href="#our-team">Our Team</a>
+                  <a href="#contacts">Contact Us</a>
+                  </div>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
