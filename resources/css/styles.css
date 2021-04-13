@@ -5,6 +5,7 @@ html {
 
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  scroll-padding-top: 70px;
 }
 
 body {
@@ -26,6 +27,7 @@ h1 {
   color: #19a2d8;
   font-weight:bold;
   padding-bottom: 1rem;
+  
 }
 
 h2 {
@@ -40,6 +42,17 @@ h2 {
   border-right: solid 1px #19a2d8;
   margin-top: 1rem;
 }
+
+
+form {
+  text-align: center;
+}
+
+
+
+
+
+
 
 /* HEADER and NAV BAR */
 
@@ -106,7 +119,7 @@ nav a:hover {
 /* Services */
 
 .services {
-  padding-top: 50px;
+  padding-top: 80px;
   display: inline-flex;
   width: 100%;
   justify-content: center;
@@ -115,7 +128,7 @@ nav a:hover {
 
 /* Our Team */
 .our-team {
-  padding-top: 50px;
+  padding-top: 80px;
   display: inline-flex;
   width: 100%;
   justify-content: center;
@@ -125,7 +138,7 @@ nav a:hover {
 /* Contacts */
 
 .contacts {
-  padding-top: 50px;
+  padding-top: 80px;
   display: inline-flex;
   width: 100%;
   justify-content: center;
@@ -137,7 +150,64 @@ nav a:hover {
 
 #email_icon {
   height: 50px;
+  
+
 }
+
+.contacts input {
+ margin: 10px;
+ margin-bottom: 20px;
+}
+
+
+.contacts textarea {
+  margin-top: 5px;
+}
+
+.form_element {
+
+text-align: left;
+}
+
+input[type=submit] {
+  width: 30%;
+  
+  background-color: #ffffff;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: solid 1px #19a2d8;;
+}
+
+input[type=submit]:hover {
+  
+  background-color: #19a2d8;
+ 
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #19a2d8;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+
+
 
 /* Footer */
 
+footer {
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+
+footer a {
+  margin-bottom: 5px;
+}
