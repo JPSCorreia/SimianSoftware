@@ -350,7 +350,6 @@ footer a {
 /* dropdown menu */
 
 .dropbtn {
-  background-color: #4CAF50;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -387,6 +386,8 @@ footer a {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+/* .dropdown:hover .dropbtn {
+  border: solid 1px #19a2d8;
+  border-radius: 5px;
 }
+*/
