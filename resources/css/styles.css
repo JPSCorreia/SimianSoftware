@@ -82,13 +82,8 @@ li {
   display: inline;
   margin-right: 50px;
   
-  
 }
 
-
-li a {
-  font-style: italic;
-}
 nav a:hover {
   color: #19a2d8;
 }
